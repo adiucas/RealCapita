@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAGA,yBAAwB;EACpB,oBAAqB;IACjB,WAAW,EAAE,GAAG;;EAGpB;UACS;IACL,KAAK,EAAE,IAAI;;EAGf,kBAAmB;IACf,aAAa,EAAE,kCAA6C",
+"sources": ["../scss/PaymentScheduleRes.scss"],
+"names": [],
+"file": "PaymentScheduleRes.css"
+}

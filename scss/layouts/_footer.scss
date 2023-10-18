@@ -1,0 +1,19 @@
+.copyright {
+	display: flex;
+	align-items: center;
+	background: #08a039;
+	color: #fff;
+	padding: 10px 15px;
+	justify-content: space-between;
+	font-size: 16px;
+
+	.ucas {
+		img {
+			width: 100%;
+			max-width: 50px;
+			margin-left: 10px;
+		}
+	}
+}
+
+@import "footerResponsive";

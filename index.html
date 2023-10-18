@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Real Capita Group</title>
+
+	<meta name="title" content="Real Capita Group">
+	<meta name="description" content="">
+
+	<!-- opengraph -->
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="">
+	<meta property="og:title" content="Real Capita Group">
+	<meta property="og:description" content="">
+	<meta property="og:image" content="">
+	<link rel="icon" type="image/x-icon" href="images/favicon.png">
+
+	<!-- fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Lato:wght@400;700&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+	<!-- css -->
+	<link rel="stylesheet" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="css/indexRes.css">
+</head>
+
+<body>
+	<header data-include="header-public" class="sticky-top"></header>
+
+	<div class="content">
+		<!-- ----------------------------------------- -->
+		<!--                   login                   -->
+		<!-- ----------------------------------------- -->
+		<div class="login-section">
+			<div class="welcome-text">
+				<span>welcome to the</span>
+				<span>client portal of</span>
+				<img src="images/rc-property-development-300x64.png">
+			</div>
+			<div id="loginCard" class="login-card">
+				<div class="get-otp-section">
+					<div class="section-title">
+						sign in
+					</div>
+					<form class="form-floating">
+						<input type="text" class="form-control" id="floatingInputValue" placeholder="Investor Code">
+						<label for="floatingInputValue">Investor Code</label>
+					</form>
+					<div class="get-otp mt-2">
+						<span class="mb-2 mb-lg-0">Get OTP By</span>
+						<div class="otp-wrapper">
+							<input type="radio" name="select" id="option-1">
+							<input type="radio" name="select" id="option-2" checked>
+							<label for="option-1" class="option option-1 me-lg-3 me-2">
+								<div class="dot"></div>
+								<span>E-Mail</span>
+							</label>
+							<label for="option-2" class="option option-2">
+								<div class="dot"></div>
+								<span>Phone</span>
+							</label>
+						</div>
+					</div>
+					<button id="otpBtn" type="button" onclick="countdown(1, 00)"
+						class="btn btn-primary btn-sm mt-3 w-100">SUBMIT</button>
+				</div>
+				<div class="otp-input-section">
+					<div id="otpInput" class="otp-input flex-column">
+						<div class="alert alert-warning" role="alert">
+							Your OTP has been sent to your E-Mail/Phone
+						</div>
+						<div class="otp-user-info mb-3">
+							<div class="name-image">
+								<div>
+									<img src="https://picsum.photos/128/128" alt="">
+								</div>
+								<p class="ms-3">
+									<strong>Arafat Hossain Adi</strong>
+									<span>
+										A5421
+									</span>
+								</p>
+							</div>
+							<div class="email-phone mt-2">
+								<span class="me-lg-2"><i class="fa-solid fa-envelope"></i> &nbsp;adi@ucasbd.com</span>
+								<span class="mt-2 mt-lg-0"><i class="fa-solid fa-phone"></i>&nbsp; 01625423992</span>
+							</div>
+						</div>
+						<div class="otp-input-wrapper input-group">
+							<span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-key"></i></span>
+							<input type="text" class="form-control" placeholder="Enter your OTP" aria-label="OTP"
+								aria-describedby="basic-addon1"
+								style="border-bottom-right-radius: .25rem; border-top-right-radius: .25rem;">
+							<button id="resetBtn" title="Resend OTP" onclick="countdown(0,10)"
+								class="btn btn-primary btn-reset-otp ml-3"><i
+									class="fa-solid fa-rotate-left"></i></button>
+						</div>
+						<div id="otpTimer" class="alert alert-warning otp-timer mt-2">
+						</div>
+						<button type="button" onclick="window.location.href='PaymentSchedule.html'"
+							class="btn btn-primary btn-sm mt-3 w-100">SUBMIT</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- ----------------------------------------- -->
+		<!--                  address                  -->
+		<!-- ----------------------------------------- -->
+		<div class="address-block">
+			<div class="info">
+				<div class="icon"><i class="fa-solid fa-location-dot"></i></div>
+				<div class="text">House# 05, Flat# C-4 & C-5, Road# 21, Gulshan- 1, Dhaka- 1212</div>
+			</div>
+			<div class="info">
+				<div class="icon"><i class="fa-solid fa-phone"></i></div>
+				<div class="text">+88-02-9898707, +88-02-8833201</div>
+			</div>
+			<div class="info">
+				<div class="icon"><i class="fa-solid fa-envelope"></i></div>
+				<div class="text">info@rcgcbd.com</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- ----------------------------------------- -->
+	<!--                  footer                   -->
+	<!-- ----------------------------------------- -->
+	<footer data-include="footer"></footer>
+	<!-- scripts -->
+	<script src="js/jquery-3.6.1.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/main.js"></script>
+	<script>
+		$("#otpBtn").click(function () {
+			var otpInput = $('.otp-input');
+
+			if (!otpInput.hasClass('active')) {
+				otpInput.addClass('show').outerWidth();
+				otpInput.addClass('active');
+				$(".get-otp-section").hide();
+			}
+		});
+
+		$("#loginBtn").click(function () {
+			var loginCard = $('.login-card');
+
+			if (!loginCard.hasClass('active')) {
+				loginCard.addClass('show').outerWidth();
+				loginCard.addClass('active');
+				loginCard.show();
+			}
+		});
+
+		$("#loginBtnsm").click(function () {
+			var loginCard = $('.login-card');
+
+			if (!loginCard.hasClass('active')) {
+				loginCard.addClass('show').outerWidth();
+				loginCard.addClass('active');
+				loginCard.show();
+			}
+		});
+
+		$(document).mouseup(function (e) {
+			var loginCardd = $(".login-card");
+
+			// if the target of the click isn't the container nor a descendant of the container
+			if (loginCardd.hasClass('active')) {
+				if (!loginCardd.is(e.target) && loginCardd.has(e.target).length === 0) {
+					loginCardd.hide();
+					loginCardd.removeClass('show');
+					loginCardd.removeClass('active');
+				}
+			}
+		});
+
+		var timeoutHandle;
+		function countdown(minutes, seconds) {
+			function tick() {
+				var counter = document.getElementById("otpTimer");
+				counter.innerHTML = "OTP will expire in " +
+					minutes.toString() + ":" + (seconds < 10 ? "0" : "") + String(seconds);
+				seconds--;
+				if (seconds >= 0) {
+					document.getElementById("otpTimer").style.display = "block";
+					document.getElementById("resetBtn").style.display = "none";
+					timeoutHandle = setTimeout(tick, 1000);
+				} else {
+					document.getElementById("otpTimer").style.display = "none";
+					document.getElementById("resetBtn").style.display = "block";
+					if (minutes >= 1) {
+						// countdown(mins-1);   never reach “00″ issue solved:Contributed by Victor Streithorst
+						setTimeout(function () {
+							countdown(minutes - 1, 59);
+						}, 1000);
+					}
+				}
+			}
+			tick();
+		}
+	</script>
+</body>
+
+</html>

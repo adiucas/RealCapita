@@ -1,0 +1,28 @@
+@media (max-width: 992px) {
+  .address-line-height {
+    line-height: 1.5; }
+
+  .block-1,
+  .block-2 {
+    width: 100%; }
+
+  .border-bottom-fix {
+    border-bottom: 1px solid rgba(35, 134, 200, 0.75); }
+
+  .table > :not(:first-child) {
+    border-top: inherit; }
+
+  .mobile-table-serial {
+    background: #2386C8 !important;
+    color: #fff !important;
+    text-align: center; }
+
+  .mobile-table-title {
+    color: #2386C8 !important;
+    font-weight: bold !important;
+    white-space: nowrap; }
+
+  .title-with-btn h5 {
+    font-size: 16px; } }
+
+/*# sourceMappingURL=CollectionDetailsForTaxRes.css.map */

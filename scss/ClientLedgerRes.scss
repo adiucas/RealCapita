@@ -1,0 +1,33 @@
+@import 'templates/variables';
+@import 'templates/mixins';
+
+@media(max-width:992px) {
+    .address-line-height {
+        line-height: 1.5;
+    }
+
+    .block-1,
+    .block-2 {
+        width: 100%;
+    }
+
+    .border-bottom-fix {
+        border-bottom: 1px solid rgba($color: $primCol, $alpha: .75);
+    }
+
+    .table> :not(:first-child) {
+        border-top: inherit;
+    }
+
+    .mobile-table-serial {
+        background: $primCol !important;
+        color: #fff !important;
+        text-align: center;
+    }
+
+    .mobile-table-title {
+        color: $primCol !important;
+        font-weight: bold !important;
+        white-space: nowrap;
+    }
+}

@@ -1,0 +1,281 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 0;
+  min-height: calc(100vh - 133px); }
+
+.login-card.show {
+  display: block; }
+
+.login-card.active {
+  opacity: 1; }
+
+.get-otp {
+  padding: 10px 15px;
+  display: flex;
+  flex-direction: col;
+  justify-content: space-between;
+  border: 1px solid #0000002e;
+  align-content: center;
+  align-items: center;
+  border-radius: .25rem; }
+
+.get-otp span {
+  margin-right: 20px; }
+
+.get-otp .form-check {
+  display: inline-block; }
+
+.otp-wrapper {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 5px; }
+
+.otp-wrapper .option {
+  background: #fff;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  cursor: pointer;
+  padding: 5px 10px;
+  border: 2px solid lightgrey;
+  transition: all 0.3s ease;
+  margin-bottom: 0;
+  border-radius: .25rem; }
+
+.otp-wrapper .option .dot {
+  height: 20px;
+  width: 20px;
+  background: #d9d9d9;
+  border-radius: 50%;
+  position: relative; }
+
+.otp-wrapper .option .dot::before {
+  position: absolute;
+  content: "";
+  top: 4px;
+  left: 4px;
+  width: 12px;
+  height: 12px;
+  background: #2386C8;
+  border-radius: 50%;
+  opacity: 0;
+  transform: scale(1.5);
+  transition: all 0.3s ease; }
+
+input[type="radio"] {
+  display: none; }
+
+#option-1:checked:checked ~ .option-1,
+#option-2:checked:checked ~ .option-2 {
+  border-color: #2386C8;
+  background: #2386C8; }
+
+#option-1:checked:checked ~ .option-1 .dot,
+#option-2:checked:checked ~ .option-2 .dot {
+  background: #fff; }
+
+#option-1:checked:checked ~ .option-1 .dot::before,
+#option-2:checked:checked ~ .option-2 .dot::before {
+  opacity: 1;
+  transform: scale(1); }
+
+.otp-wrapper .option span {
+  color: #808080;
+  margin-left: 10px;
+  margin-right: 5px;
+  white-space: nowrap; }
+
+#option-1:checked:checked ~ .option-1 span,
+#option-2:checked:checked ~ .option-2 span {
+  color: #fff; }
+
+.otp-input {
+  display: none;
+  opacity: 0;
+  transition: opacity 1s ease, height 1s ease; }
+
+.otp-input.show {
+  display: flex !important; }
+
+.otp-input.active {
+  opacity: 1 !important; }
+
+.otp-timer {
+  width: 100%;
+  padding: 5px 15px;
+  margin-bottom: 0; }
+
+.otp-user-info {
+  display: flex;
+  flex-basis: 100%;
+  border: 1px solid lightgray;
+  overflow: hidden;
+  align-content: center;
+  align-items: center;
+  padding: 15px;
+  flex-direction: column;
+  border-radius: 8px !important; }
+
+.otp-user-info .name-image {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  padding: 15px;
+  border-radius: 10px; }
+
+.otp-user-info .name-image div {
+  display: flex;
+  align-items: flex-start;
+  width: 50px;
+  height: 50px;
+  justify-content: center;
+  border-radius: 50%;
+  border: 1px solid #2386C8;
+  overflow: hidden; }
+
+.otp-user-info .name-image p {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; }
+
+.otp-user-info .name-image span {
+  text-transform: uppercase;
+  background: #2386C8;
+  padding: 2.5px 5px;
+  color: #fff;
+  font-size: 14px;
+  border-radius: .25rem; }
+
+.otp-user-info img {
+  border-radius: 100px;
+  max-width: 50px;
+  width: 100%; }
+
+.otp-input-wrapper {
+  display: flex;
+  flex-basis: 100%; }
+
+.otp-user-info .email-phone {
+  display: flex;
+  width: 100%;
+  justify-content: space-between; }
+
+.otp-user-info .email-phone span {
+  background: #2386C8;
+  padding: 5px 10px;
+  color: #ffffff;
+  border-radius: .25rem; }
+
+.otp-input .alert {
+  width: 100%; }
+
+.login-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 15px;
+  padding-left: 15px;
+  flex-direction: column;
+  margin: 16px 0; }
+  .login-section .login-card {
+    background: #ffffff;
+    padding: 15px;
+    position: unset;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+    max-width: 400px;
+    width: 100%;
+    display: unset;
+    border: 1px solid #2386C8;
+    border-radius: 8px; }
+  .login-section .otp-input .alert {
+    font-size: 14px; }
+  .login-section .welcome-text {
+    text-align: center;
+    margin-bottom: 30px;
+    text-transform: uppercase; }
+    .login-section .welcome-text img {
+      margin-top: 24px;
+      max-height: 50px; }
+  .login-section .welcome-text > span {
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    font-weight: lighter;
+    display: block;
+    margin-bottom: -10px;
+    color: var(--red); }
+  .login-section .welcome-text > span + span {
+    font-size: 32px;
+    font-weight: bold;
+    color: #2386C8; }
+  .login-section .welcome-text > span + span::after {
+    content: "";
+    display: block;
+    border: 2px solid #2386C8;
+    width: 100%;
+    margin: -5px auto 0 auto; }
+  .login-section .section-title {
+    color: #2386C8;
+    font-family: "Inter", sans-serif;
+    font-size: 24px;
+    margin-bottom: 15px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase; }
+    .login-section .section-title::after {
+      content: "";
+      display: block;
+      width: 100%;
+      border-bottom: 2px solid #2386C8; }
+
+.otp-input-section .otp-input {
+  display: none;
+  opacity: 0;
+  transition: opacity 1s ease, height 1s ease; }
+
+.address-block {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  margin-bottom: 16px;
+  padding: 0 16px; }
+  .address-block .info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: #2386C8;
+    border-radius: 10px;
+    border: 1px solid var(--company-color);
+    margin: 7.5px 0;
+    width: 100%;
+    padding: 10px 15px; }
+    .address-block .info:not(:last-child) {
+      margin-right: 15px; }
+    .address-block .info .icon {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      background: #1DAE4B;
+      padding: 10px;
+      width: 40px;
+      height: 40px;
+      border-radius: 40px;
+      flex-shrink: 0; }
+      .address-block .info .icon i {
+        color: #ffffff; }
+    .address-block .info .text {
+      color: #eef6fc;
+      margin-left: 10px; }
+
+/*# sourceMappingURL=index.css.map */

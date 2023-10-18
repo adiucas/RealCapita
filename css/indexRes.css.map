@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAGA,yBAAwB;EACpB,QAAS;ICKX,OAAO,EAAE,IAAI;IACb,cAAc,EAAE,MAAM;;EDFpB,2BAA4B;ICC9B,OAAO,EAAE,IAAI;IACb,cAAc,EAAE,MAAM;IDAhB,KAAK,EAAE,KAAK;;EAGhB,cAAe;ICJjB,OAAO,EAAE,IAAI;IACb,cAAc,EAAE,MAAM",
+"sources": ["../scss/indexRes.scss","../scss/templates/_mixins.scss"],
+"names": [],
+"file": "indexRes.css"
+}

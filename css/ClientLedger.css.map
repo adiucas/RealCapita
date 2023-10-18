@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAGA,oBAAqB;EACjB,WAAW,EAAE,CAAC;;AAGlB,kBAAmB;EACf,aAAa,EAAE,KAAK",
+"sources": ["../scss/ClientLedger.scss"],
+"names": [],
+"file": "ClientLedger.css"
+}

@@ -1,0 +1,18 @@
+@media(max-width:992px) {
+    .copyright {
+        @include flex(col);
+        text-align: center;
+        align-items: center;
+        font-size: 16px;
+        padding: 10px 15px;
+        justify-content: space-between;
+
+        .ucas {
+            img {
+                width: 100%;
+                max-width: 50px;
+                margin-left: 10px;
+            }
+        }
+    }
+}

@@ -1,0 +1,18 @@
+<section class="copyright">
+    <div class="copyText">
+        Copyright © <span id="copyDate">2023</span> Real Capita Group. All Rights Reserved.
+    </div>
+    <div class="ucas">
+        <span>Development &amp; Maintenance by</span>
+        <a href="http://www.ucasbd.com/" target="_blank">
+            <img src="/images/ucas-logo.svg">
+        </a>
+    </div>
+</section>
+<script>
+    //copyright date
+    const date = new Date();
+    let year = date.getFullYear();
+
+    document.getElementById("copyDate").innerHTML = year;
+</script>

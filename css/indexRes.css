@@ -1,0 +1,15 @@
+@media (max-width: 992px) {
+  .get-otp {
+    display: flex;
+    flex-direction: column; }
+
+  .otp-user-info .email-phone {
+    display: flex;
+    flex-direction: column;
+    width: unset; }
+
+  .address-block {
+    display: flex;
+    flex-direction: column; } }
+
+/*# sourceMappingURL=indexRes.css.map */

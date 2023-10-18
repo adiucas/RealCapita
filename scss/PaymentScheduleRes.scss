@@ -1,0 +1,17 @@
+@import 'templates/variables';
+@import 'templates/mixins';
+
+@media(max-width:992px) {
+    .address-line-height {
+        line-height: 1.5;
+    }
+
+    .block-1,
+    .block-2 {
+        width: 100%;
+    }
+
+    .border-bottom-fix {
+        border-bottom: 1px solid rgba($color: $primCol, $alpha: .75);
+    }
+}

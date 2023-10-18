@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAGA,yBAAwB;EACpB,oBAAqB;IACjB,WAAW,EAAE,GAAG;;EAGpB;UACS;IACL,KAAK,EAAE,IAAI;;EAGf,kBAAmB;IACf,aAAa,EAAE,kCAA6C;;EAGhE,2BAA2B;IACvB,UAAU,EAAE,OAAO;;EAGvB,oBAAqB;IACjB,UAAU,EAAE,kBAAmB;IAC/B,KAAK,EAAE,eAAe;IACtB,UAAU,EAAE,MAAM;;EAGtB,mBAAoB;IAChB,KAAK,EAAE,kBAAmB;IAC1B,WAAW,EAAE,eAAe;IAC5B,WAAW,EAAE,MAAM;;EAInB,kBAAG;IACC,SAAS,EAAE,IAAI",
+"sources": ["../scss/CollectionDetailsForTaxRes.scss"],
+"names": [],
+"file": "CollectionDetailsForTaxRes.css"
+}

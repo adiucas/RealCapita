@@ -1,0 +1,17 @@
+@import 'templates/variables';
+@import 'templates/mixins';
+
+@media(max-width:992px) {
+    .get-otp {
+        @include flex(col);
+    }
+
+    .otp-user-info .email-phone {
+        @include flex(col);
+        width: unset;
+    }
+
+    .address-block {
+        @include flex(col);
+    }
+}
